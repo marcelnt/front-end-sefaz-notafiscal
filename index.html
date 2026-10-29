@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Emissão de NF-e - Visualizador DANFE</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/imprimir_danfe.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Integração DANFE - Front-End</h2>
+    <p>Clique no botão abaixo para disparar o JSON para a API e carregar o PDF gerado em Base64.</p>
+
+    <button id="btnEmitir" onclick="emitirNFe()">Enviar Requisição e Gerar DANFE</button>
+
+    <div id="divStatus" class="status"></div>
+
+    <div id="divAcoes" class="actions">
+      <button onclick="abrirNovaAba()" style="background-color: #28a745;">Abrir PDF em Nova Aba</button>
+    </div>
+
+    <iframe id="iframePdf" style="display: none;"></iframe>
+  </div>
+
+
+</body>
+</html>
